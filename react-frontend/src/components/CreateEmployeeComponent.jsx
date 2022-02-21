@@ -68,9 +68,9 @@ class CreateEmployeeComponent extends Component {
 
     getTitle(){
         if(this.state.id === '_add'){
-            return <h3 className="text-center">Add Employee</h3>
+            return <h3 className="text-center">Agregar empleado</h3>
         }else{
-            return <h3 className="text-center">Update Employee</h3>
+            return <h3 className="text-center">Actualizar empleado</h3>
         }
     }
     render() {
@@ -86,23 +86,23 @@ class CreateEmployeeComponent extends Component {
                                 <div className = "card-body">
                                     <form>
                                         <div className = "form-group">
-                                            <label> First Name: </label>
-                                            <input placeholder="First Name" name="firstName" className="form-control" 
+                                            <label> Nombre: </label>
+                                            <input placeholder="Pepito" name="firstName" className="form-control" 
                                                 value={this.state.firstName} onChange={this.changeFirstNameHandler}/>
                                         </div>
                                         <div className = "form-group">
-                                            <label> Last Name: </label>
-                                            <input placeholder="Last Name" name="lastName" className="form-control" 
+                                            <label> Apellido: </label>
+                                            <input placeholder="Perez" name="lastName" className="form-control" 
                                                 value={this.state.lastName} onChange={this.changeLastNameHandler}/>
                                         </div>
                                         <div className = "form-group">
-                                            <label> Email Id: </label>
-                                            <input placeholder="Email Address" name="emailId" className="form-control" 
+                                            <label> Email: </label>
+                                            <input placeholder="Pepitoperez666@gmail.com" name="emailId" className="form-control" 
                                                 value={this.state.emailId} onChange={this.changeEmailHandler}/>
                                         </div>
 
-                                        <button className="btn btn-success" onClick={this.saveOrUpdateEmployee}>Save</button>
-                                        <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
+                                        <button className="btn btn-success" onClick={this.saveOrUpdateEmployee}>Guardar</button>
+                                        <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancelar</button>
                                     </form>
                                 </div>
                             </div>
